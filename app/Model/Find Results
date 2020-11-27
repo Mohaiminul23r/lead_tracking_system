@@ -1,0 +1,123 @@
+Searching 7979 files for "App\Model\User"
+
+C:\wamp\www\Systech\lead_tracking_system\config\default-user.php:
+    2  
+    3      return [
+    4:         'model' => 'App\Model\User',
+    5          'primary-key' => 'id',
+    6          'name' => 'name'
+
+C:\wamp\www\Systech\lead_tracking_system\config\services.php:
+   31  
+   32      'stripe' => [
+   33:         'model' => App\Model\User::class,
+   34          'key' => env('STRIPE_KEY'),
+   35          'secret' => env('STRIPE_SECRET'),
+
+C:\wamp\www\Systech\lead_tracking_system\database\factories\UserFactory.php:
+   14  */
+   15  
+   16: $factory->define(App\Model\User::class, function (Faker $faker) {
+   17      return [
+   18          'name' => $faker->name,
+
+C:\wamp\www\Systech\lead_tracking_system\storage\logs\laravel.log:
+ 50949  #37 {main}
+ 50950  "} 
+ 50951: [2018-12-10 10:58:33] local.ERROR: Class 'App\Model\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\User' not found at C:\\wamp\\www\\Systech\\lead_tracking_system\\app\\Http\\Controllers\\Auth\\RegisterController.php:66)
+ 50952  [stacktrace]
+ 50953  #0 C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\RegistersUsers.php(33): App\\Http\\Controllers\\Auth\\RegisterController->create(Array)
+ .....
+ 51188  #53 {main}
+ 51189  "} 
+ 51190: [2018-12-10 16:18:35] local.ERROR: Class '\App\Model\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class '\\App\\User' not found at C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php:154)
+ 51191  [stacktrace]
+ 51192  #0 C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php(114): Illuminate\\Auth\\EloquentUserProvider->createModel()
+ .....
+ 51250  #58 {main}
+ 51251  "} 
+ 51252: [2018-12-10 16:27:48] local.ERROR: Class '\App\Model\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class '\\App\\User' not found at C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php:154)
+ 51253  [stacktrace]
+ 51254  #0 C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php(114): Illuminate\\Auth\\EloquentUserProvider->createModel()
+ .....
+ 51312  #58 {main}
+ 51313  "} 
+ 51314: [2018-12-10 16:38:24] local.ERROR: Class '\App\Model\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class '\\App\\User' not found at C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php:154)
+ 51315  [stacktrace]
+ 51316  #0 C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php(114): Illuminate\\Auth\\EloquentUserProvider->createModel()
+ .....
+ 51374  #58 {main}
+ 51375  "} 
+ 51376: [2018-12-10 16:44:21] local.ERROR: Class '\App\Model\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class '\\App\\User' not found at C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php:154)
+ 51377  [stacktrace]
+ 51378  #0 C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php(114): Illuminate\\Auth\\EloquentUserProvider->createModel()
+ .....
+ 51436  #58 {main}
+ 51437  "} 
+ 51438: [2018-12-10 16:48:59] local.ERROR: Class '\App\Model\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class '\\App\\User' not found at C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php:154)
+ 51439  [stacktrace]
+ 51440  #0 C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php(114): Illuminate\\Auth\\EloquentUserProvider->createModel()
+ .....
+ 51498  #58 {main}
+ 51499  "} 
+ 51500: [2018-12-10 16:49:50] local.ERROR: Class '\App\Model\User' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class '\\App\\User' not found at C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php:154)
+ 51501  [stacktrace]
+ 51502  #0 C:\\wamp\\www\\Systech\\lead_tracking_system\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\EloquentUserProvider.php(114): Illuminate\\Auth\\EloquentUserProvider->createModel()
+
+C:\wamp\www\Systech\lead_tracking_system\vendor\kawsarjoy\rolepermission\readme.md:
+  197  
+  198  ```php
+  199: use App\Model\User;
+  200  
+  201  $user = User::find($id);
+  ...
+  216  namespace App\Http\Controllers\Auth;
+  217  
+  218: use App\Model\User;
+  219  use App\Http\Controllers\Controller;
+  220  use Illuminate\Support\Facades\Validator;
+  ...
+  268  
+  269  ```php
+  270: use App\Model\User;
+  271  use KawsarJoy\RolePermission\Models\Role;
+  272  
+
+C:\wamp\www\Systech\lead_tracking_system\vendor\kawsarjoy\rolepermission\src\config\default-user.php:
+    2  
+    3      return [
+    4:         'model' => 'App\Model\User',
+    5          'primary-key' => 'id',
+    6          'name' => 'name'
+
+C:\wamp\www\Systech\lead_tracking_system\vendor\laravel\framework\src\Illuminate\Routing\Find Results:
+    1  
+    2: Searching 7978 files for "App\Model\User"
+    3  
+    4  C:\wamp\www\Systech\lead_tracking_system\config\default-user.php:
+    .
+   57    197  
+   58    198  ```php
+   59:   199: use App\Model\User;
+   60    200  
+   61    201  $user = User::find($id);
+   ..
+   63    216  namespace App\Http\Controllers\Auth;
+   64    217  
+   65:   218: use App\Model\User;
+   66    219  use App\Http\Controllers\Controller;
+   67    220  use Illuminate\Support\Facades\Validator;
+   ..
+   69    268  
+   70    269  ```php
+   71:   270: use App\Model\User;
+   72    271  use KawsarJoy\RolePermission\Models\Role;
+   73    272  
+   ..
+   76      2  
+   77      3      return [
+   78:     4:         'model' => 'App\Model\User',
+   79      5          'primary-key' => 'id',
+   80      6          'name' => 'name'
+
+19 matches across 7 files
